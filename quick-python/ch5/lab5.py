@@ -10,7 +10,7 @@ class TemperatureFile():
 
     def _read_temperature_file(self):
         self.temperatures = []
-        with open('ch5\lab_05.txt') as f:
+        with open('.\quick-python\ch5\lab_05.txt') as f:
             for row in f:
                 self.temperatures.append(float(row.strip()))
 
@@ -31,6 +31,10 @@ class TemperatureFile():
     
     def average(self):
         return self.sum() / self.length
+    
+    def unique_temperatures(self):
+        unique_temps = set(self.temperatures)
+        return unique_temps, len(unique_temps)
 
 def main():
     temperature_file = TemperatureFile()
@@ -39,6 +43,7 @@ def main():
     print(temperature_file.sum())
     print(temperature_file.median())
     print(temperature_file.average())
+    print(temperature_file.unique_temperatures())
 
 if __name__ == "__main__":
     main()
