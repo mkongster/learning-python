@@ -4,8 +4,8 @@ and write the words one per line to a second file.
 
 def clean_text(output_file=True): 
     output = []
-    with open('quick_python\ch6\moby_01.txt') as infile, \
-        open('quick_python\ch6\moby_01_clean.txt', 'w') as outfile:
+    with open('quick_python/ch6/moby_01.txt') as infile, \
+        open('quick_python/ch6/moby_01_clean.txt', 'w') as outfile:
         for line in infile:
             translate_table = line.maketrans('.-,;','    ')
             if output_file:
