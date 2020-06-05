@@ -1,3 +1,6 @@
+'''Counts the occurences of words in a file and returns the most and least occuring words
+'''
+
 from quick_python.ch6.lab6 import clean_text
 from operator import itemgetter
 
@@ -27,5 +30,3 @@ def main():
     print('The least common word is: {least} with {least_count} occurences.' \
         .format(least=least, least_count=least_count))
 
-if __name__ == '__main__':
-    main()
