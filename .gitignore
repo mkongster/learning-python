@@ -1,2 +1,4 @@
 *.pyc
 *.json
+*.html
+epi_python/html/*
