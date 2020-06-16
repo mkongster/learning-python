@@ -6,11 +6,12 @@ def divide(x: int, y: int) -> int:
     power = 32 # max bits
     y_power = y << power
     while x >= y:
-        # find the largest k, such that (2**k)y <= x, add k to the quotient
+        # find the largest k, such that (2**k)y <= x
         while y_power > x:
             y_power >>= 1
             power -= 1
         
+        # add k to the quotient
         quotient += 1 << power
         x -= y_power
     return quotient

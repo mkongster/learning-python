@@ -2,8 +2,6 @@ from test_framework import generic_test
 from swap_bits import swap_bits
 
 # brute force
-
-
 def reverse_bits(x: int) -> int:
     msb = len(bin(x)) - 3
     i = 0
