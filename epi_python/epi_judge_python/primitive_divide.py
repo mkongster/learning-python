@@ -1,9 +1,19 @@
 from test_framework import generic_test
 
-
+# do as much work as possible with each iteration
 def divide(x: int, y: int) -> int:
-    # TODO - you fill in here.
-    return 0
+    quotient = 0
+    power = 32 # max bits
+    y_power = y << power
+    while x >= y:
+        # find the largest k, such that (2**k)y <= x, add k to the quotient
+        while y_power > x:
+            y_power >>= 1
+            power -= 1
+        
+        quotient += 1 << power
+        x -= y_power
+    return quotient
 
 
 if __name__ == '__main__':
