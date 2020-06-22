@@ -39,6 +39,7 @@ def dutch_flag_partition(pivot_index: int, A: List[int]) -> None:
             larger -= 1
             A[equal], A[larger] = A[larger], A[equal]
 
+
 @enable_executor_hook
 def dutch_flag_partition_wrapper(executor, A, pivot_idx):
     count = [0, 0, 0]
