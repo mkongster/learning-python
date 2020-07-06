@@ -6,9 +6,21 @@ from test_framework.test_failure import PropertyName, TestFailure
 from test_framework.test_utils import enable_executor_hook
 
 
+# def rearrange(A: List[int]) -> None:
+#     sorted_list = sorted(A)
+#     while sorted_list:
+#         first = sorted_list.pop(0)
+#         A.append(first)
+#         A.remove(first)
+#         if sorted_list:
+#             second = sorted_list.pop()
+#             A.append(second)
+#             A.remove(second)
+
+
 def rearrange(A: List[int]) -> None:
-    # TODO - you fill in here.
-    return
+    for i in range(len(A)):
+        A[i:i + 2] = sorted(A[i:i + 2], reverse=bool(i % 2))
 
 
 @enable_executor_hook
