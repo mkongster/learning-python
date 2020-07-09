@@ -94,7 +94,7 @@ problem_mapping = {
                 "total": 10000
             },
             "Python: primitive_divide.py": {
-                "passed": 0,
+                "passed": 10000,
                 "total": 10000
             }
         },
@@ -108,7 +108,7 @@ problem_mapping = {
                 "total": 10002
             },
             "Python: power_x_y.py": {
-                "passed": 0,
+                "passed": 10002,
                 "total": 10002
             }
         },
@@ -122,7 +122,7 @@ problem_mapping = {
                 "total": 19952
             },
             "Python: reverse_digits.py": {
-                "passed": 0,
+                "passed": 19952,
                 "total": 19952
             }
         },
@@ -136,7 +136,7 @@ problem_mapping = {
                 "total": 20000
             },
             "Python: is_number_palindromic.py": {
-                "passed": 0,
+                "passed": 20000,
                 "total": 20000
             }
         },
@@ -150,7 +150,7 @@ problem_mapping = {
                 "total": 7
             },
             "Python: uniform_random_number.py": {
-                "passed": 0,
+                "passed": 7,
                 "total": 7
             }
         },
@@ -180,7 +180,7 @@ problem_mapping = {
                 "total": 1001
             },
             "Python: even_odd_array.py": {
-                "passed": 0,
+                "passed": 1001,
                 "total": 1001
             }
         },
@@ -194,7 +194,7 @@ problem_mapping = {
                 "total": 204
             },
             "Python: dutch_national_flag.py": {
-                "passed": 0,
+                "passed": 204,
                 "total": 204
             }
         },
@@ -208,7 +208,7 @@ problem_mapping = {
                 "total": 505
             },
             "Python: int_as_array_increment.py": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             }
         },
@@ -222,7 +222,7 @@ problem_mapping = {
                 "total": 1000
             },
             "Python: int_as_array_multiply.py": {
-                "passed": 0,
+                "passed": 1000,
                 "total": 1000
             }
         },
@@ -236,7 +236,7 @@ problem_mapping = {
                 "total": 2004
             },
             "Python: advance_by_offsets.py": {
-                "passed": 0,
+                "passed": 2004,
                 "total": 2004
             }
         },
@@ -250,7 +250,7 @@ problem_mapping = {
                 "total": 2003
             },
             "Python: sorted_array_remove_dups.py": {
-                "passed": 0,
+                "passed": 2003,
                 "total": 2003
             }
         },
@@ -264,7 +264,7 @@ problem_mapping = {
                 "total": 402
             },
             "Python: buy_and_sell_stock.py": {
-                "passed": 0,
+                "passed": 402,
                 "total": 402
             }
         },
@@ -278,7 +278,7 @@ problem_mapping = {
                 "total": 402
             },
             "Python: buy_and_sell_stock_twice.py": {
-                "passed": 0,
+                "passed": 402,
                 "total": 402
             }
         },
@@ -292,7 +292,7 @@ problem_mapping = {
                 "total": 203
             },
             "Python: alternating_array.py": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             }
         },
@@ -306,7 +306,7 @@ problem_mapping = {
                 "total": 24
             },
             "Python: prime_sieve.py": {
-                "passed": 0,
+                "passed": 24,
                 "total": 24
             }
         },
