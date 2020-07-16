@@ -32,10 +32,8 @@ def recite(start_verse, end_verse):
 
 
 def main():
-    expected = [recite(n, n)[0] for n in range(1, 4)]
-    print(expected)
-    print(recite(1,3))
-    print(recite(2,2))
+    for i in recite(1,12):
+        print(i)
 
 
 if __name__ == "__main__":
