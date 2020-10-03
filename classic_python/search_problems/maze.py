@@ -2,7 +2,7 @@ from enum import Enum
 from typing import List, NamedTuple, Callable, Optional
 import random
 from math import sqrt
-from generic_search import dfs, node_to_path, Node #bfs, astar
+from generic_search import dfs, node_to_path, Node, bfs#, astar
 
 class Cell(str, Enum):
     EMPTY = ' '
@@ -65,7 +65,7 @@ class Maze:
         for maze_location in path:
             self._grid[maze_location.row][maze_location.column] = Cell.EMPTY
         self._grid[self.start.row][self.start.column] = Cell.START
-        self._grid[self.goal.row][self.goal.columm] = Cell.GOAL
+        self._grid[self.goal.row][self.goal.column] = Cell.GOAL
 
     
 
@@ -75,11 +75,24 @@ if __name__ == '__main__':
     print('Initial Maze: ')
     print(maze)
 
-    solution: Optional[Node[MazeLocation]] = dfs(maze.start, maze.goal_test, maze.successors)
-    if solution is None:
+    solution_dfs: Optional[Node[MazeLocation]] = dfs(maze.start, maze.goal_test, maze.successors)
+    if solution_dfs is None:
         print('No solution found using depth-first search!')
     else:
         print('Solved maze using depth-first search: ')
-        path: List[MazeLocation] = node_to_path(solution)
-        maze.mark(path)
+        path_dfs: List[MazeLocation] = node_to_path(solution_dfs)
+        maze.mark(path_dfs)
         print(maze)
+        maze.clear(path_dfs)
+
+    solution_bfs: Optional[Node[MazeLocation]] = bfs(maze.start, maze.goal_test, maze.successors)
+    if solution_bfs is None:
+        print('No solution found using breadth-first search!')
+    else:
+        print('Solved maze using breadth-first search: ')
+        path_bfs: List[MazeLocation] = node_to_path(solution_bfs)
+        maze.mark(path_bfs)
+        print(maze)
+        maze.clear(path_bfs)
+
+    
